@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	color: #2C3543;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 24px ;
+}
+header {
+	color: #fff;
+	height: 130px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+header .container {
+	display: flex;
+}
+header .container .flex {
+	flex-wrap: wrap;
+	width: 33%;
+}
+.header-left {
+	text-align: left;
+	line-height: 130px;
+	font-size: 24px;
+}
+.header-left .search {
+	padding-right: 16px;
+	height: 16px;
+}
+.header-left .search {
+	height: 100%;
+}
+.header-logo {
+	text-align: center;
+	padding-top: 30px;
+}
+.header-right {
+	line-height: 130px;
+}
+.header-right ul {
+	justify-content: flex-end;
+}
+.AreaHeader-wrapper {
+	height: 560px;
+	background-image: url(../image/cover.jpeg);
+	background-size: cover;
+}
+.AreaHeader-wrapper .container {
+	position: relative;
+}
+.AreaHeader-wrapper .container .logo {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.AreaHeader-wrapper .container .logo img {
+	width: 240px;
+}
+.header-right ul {
+	display: flex;
+}
+.header-right ul li {
+	font-size: 14px;
+	padding-left: 16px;
+}
+.header-right ul .btn a {
+	border: 1px solid #fff;
+	padding: 8px 24px;
+	border-radius: 24px;
+}
+.header-right ul li a {
+	color: #fff;
+}
+.header-right ul li a:hover {
+	color: rgb(255, 255, 255, 0.8);
+}
+.Introduction-wrapper {
+	margin: 80px 0;
+	text-align: center;
+}
+.Introduction-wrapper .container {
+	max-width: 800px;
+}
+.Introduction-wrapper h2 {
+	font-size: 40px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+.Introduction-wrapper h2::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -32px;/*線の上下位置*/
+	display: inline-block;
+	width: 32px;/*線の長さ*/
+	height: 2px;/*線の太さ*/
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);/*位置調整*/
+	background-color: #DA0909;/*線の色*/
+	margin-bottom: 8px;
+}
+.Introduction-wrapper p {
+	margin-top: 24px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.Introduction-wrapper a {
+	color: #297CBB;
+}
