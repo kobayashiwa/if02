@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>条件分岐 - 真偽値と比較演算子</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-left flex"><p><span class="search"><img src="image/Icon.svg"></span>Search Lonely Planet</p></div>
+            <div class="header-logo flex"><img src="image/Logo.svg" alt="Lonely Planet"></div>
+            <div class="header-right flex">
+                <ul>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Bookings</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li class="btn"><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="AreaHeader-wrapper">
+        <div class="container">
+            <div class="logo"><img src="image/LonelyPlanetExperiences.png"></div>
+        </div>
+    </div>
+
+    <div class="Introduction-wrapper">
+        <div class="container">
+            <h2>Travel inspiration</h2>
+            <p>Experience hidden gems with the world's leading travel publisher with tours offered globally in over 65 cities. All our experiences are designed, built, and run by local experts.</p>
+            <p>COVID-19 Announcement
+                All multi-day tours are temporarily suspended until April 30th, for more details please visit: <a href="#">https://www.intrepidtravel.com/au/covid19</a></p>
+            <p>For updates regarding our day tours from Urban Adventures, please visit: <a href="#">https://www.urbanadventures.com/coronavirus</a></p>
+        </div>    
+    </div>
+
+    <script>
+        const age = 20;
+        if ( age < 31) {
+            console.log ("私は31歳より年下です");
+        }
+        if ( age <= 30) {
+            console.log ("私は20歳以上です");
+        }
+        if ( age > 4) {
+            console.log ("私は4歳より年上です");
+        }
+        if ( age => 10) {
+            console.log ("私は10歳以上です");
+        }
+    </script>
+
+</body>
+</html>
