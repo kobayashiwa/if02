@@ -65,7 +65,7 @@ header .container .flex {
 }
 .AreaHeader-wrapper {
 	height: 560px;
-	background-image: url(../image/cover.jpeg);
+	background-image: url(../img/cover.jpeg);
 	background-size: cover;
 }
 .AreaHeader-wrapper .container {
