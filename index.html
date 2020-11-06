@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js" type="text/javascript"></script>
+    <script src="./js/lottie.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -44,9 +44,19 @@
         </div>    
     </div>
 
-    <div id="lottie"></div>
-    表示テスト
-        <script src="js/main.js" type="text/javascript"></script>
+    <div class="list">
+        <div id="CheckmarkWater" class="animation">
+        <script>
+        var animationTivel = lottie.loadAnimation({
+        container: document.getElementById('CheckmarkWater'), // 表示させたい要素を渡します
+        renderer: 'svg', // 描画形式を指定します. // svg or canvas or html svg以外ちゃんとためしてないですが
+        loop: true, // trueにしたらループです。1回再生の場合はfalseで
+        autoplay: true, // 自動再生です。falseの場合は自分のタイミングで
+        path: './json/CheckmarkWater.json' // 再生させたいアニメーションのjsonのパスを指定します。
+        });
+        </script> 
+        </div>
+        </div>
 
     <script>
         const age = 20;
